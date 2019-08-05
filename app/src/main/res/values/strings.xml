@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Quizzicle</string>
+    <string name="shr_hint_username">Username</string>
+    <string name="shr_hint_password">Password</string>
+    <string name="filter">Filter</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Continue with Facebook</string>
+    <string name="signup">SignUp</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="facebook_app_id">2568263246521223</string>
+    <string name="fb_login_protocol_scheme">fb2568263246521223</string>
+    <string name="default_web_client_id1">244826300748-7furr5f4lo7ao637s67dqiutsr62gcqq.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+
+
+
+</resources>

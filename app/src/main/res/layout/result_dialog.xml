@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ResultDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="200dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/buttondesign">
+    <TextView
+        android:id="@+id/score"
+        android:layout_below="@+id/main_appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:text="Your Score"
+        android:padding="20dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttondesign"
+        android:text="Ok"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+
+</LinearLayout>

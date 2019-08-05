@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_spa_black_24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.Quiz.Title"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttondesign">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Quiz.TextInputLayout"
+                android:background="@android:color/transparent"
+                android:hint="@string/shr_hint_username">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:drawableStart="@drawable/ic_account_circle_black_24dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:background="@android:color/transparent"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- Snippet from "Add buttons" section goes here. -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Quiz.TextInputLayout"
+                android:hint="@string/shr_hint_password"
+                app:passwordToggleEnabled="true"
+                android:background="@android:color/transparent"
+                app:errorEnabled="true"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/text_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:background="@android:color/transparent"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/signin_button"
+            style="@style/Widget.Quiz.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:textSize="15dp"
+            android:background="@drawable/buttondesign"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <fragment
+                android:id="@+id/fragmentfb"
+                android:name="com.example.quizapp.FacebookFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_facebook"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <fragment
+                android:id="@+id/fragmentg"
+                android:name="com.example.quizapp.GoogleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                tools:layout="@layout/fragment_google" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textview_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You don't have an account?Signup"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

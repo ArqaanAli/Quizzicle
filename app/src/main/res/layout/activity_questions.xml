@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/buttondesign"
+        android:layout_margin="20dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/questions_text"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:padding="20sp"
+            android:textColor="@color/colorPrimary"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/option_layout"
+        android:background="@drawable/textlayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:text=""/>
+
+
+    <TextView
+        android:id="@+id/count_text"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/option_layout"
+        android:background="@drawable/buttondesign"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:text=""
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/option_1_button"
+            style="@style/Widget.Quiz.Button"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textSize="15dp"
+            android:background="@drawable/buttondesign"
+            />
+
+        <Button
+            android:id="@+id/option_2_button"
+            style="@style/Widget.Quiz.Button"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:background="@drawable/buttondesign"
+            />
+
+        <Button
+            android:id="@+id/option_3_button"
+            style="@style/Widget.Quiz.Button"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:background="@drawable/buttondesign"
+            />
+
+        <Button
+            android:id="@+id/option_4_button"
+            style="@style/Widget.Quiz.Button"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:background="@drawable/buttondesign"
+            />
+    </LinearLayout>
+</RelativeLayout>
